@@ -1,8 +1,10 @@
 var React = require('react');
-
+var Clock = require('Clock');
 var Timer = (props)=>{
   return(
-    <h1>This is Timer page</h1>
+    <div>
+      <Clock totalSeconds={0}/>
+    </div>
   )
 }
 module.exports = Timer;
