@@ -35,6 +35,10 @@ var CountDown = React.createClass({
       this.setState({
         count:newCount >= 0 ? newCount : 0
       });
+
+      if(newCount === 0){
+        this.setState({countdownStatus:'stopped'});
+      }
     },1000);
   },
   handleSetCountDown:function(seconds){
