@@ -4,6 +4,8 @@ var CountdownForm = React.createClass({
   onSubmit:function(e){
     e.preventDefault();
     var cdText = this.refs.second.value;
+
+    console.log('input count ',$('input').length);
     if(cdText.match(/^[0-9]*$/) && cdText.length > 0){
       this.refs.second.value = '';
       this.props.onSetCountdown(parseInt(cdText,10));
