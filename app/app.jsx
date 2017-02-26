@@ -5,10 +5,6 @@ var Main = require('Main');
 var CountDown = require('CountDown');
 var Timer = require('Timer');
 
-
-//Load foundation
-
-
 $(document).foundation();
 //App css
 require('style!css!sass!applicationStyles')
